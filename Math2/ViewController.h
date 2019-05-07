@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameModel.h"
+#import "Player.h"
 
 @interface ViewController : UIViewController
 

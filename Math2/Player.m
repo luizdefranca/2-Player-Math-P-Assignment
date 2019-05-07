@@ -13,6 +13,7 @@
 {
     self = [super init];
     if (self) {
+        _alive = YES;
         _score = 0;
         _lives = 3;
     }
@@ -21,8 +22,11 @@
 
 -(void) loseLife
 {
-    _lives --;
+    _lives--;
 }
-
+-(void) hitAnAnswer
+{
+    _score++;
+}
 
 @end

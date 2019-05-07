@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Player1: 20 + 20 ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8kr-38-ml9" userLabel="Screen">
-                                <rect key="frame" x="40" y="134" width="295" height="36.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" id="tuK-c3-10d" userLabel="MainStack">
                                 <rect key="frame" x="43" y="208" width="300" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,18 +34,27 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="1"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5f-2W-puk"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lut-Pj-KhI" userLabel="TwoBt">
                                                         <rect key="frame" x="97.5" y="0.0" width="97" height="98"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="2"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqT-YT-UUz"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JiW-lb-5QC" userLabel="ThreeBt">
                                                         <rect key="frame" x="194.5" y="0.0" width="97.5" height="98"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="3"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bf-rG-wEW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
@@ -61,7 +63,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="7gp-av-dNd" userLabel="Row2">
-                                        <rect key="frame" x="4" y="102" width="292" height="98"/>
+                                        <rect key="frame" x="4" y="151" width="292" height="98"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" id="33X-4r-Cpg">
@@ -73,18 +75,27 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="4"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHc-Jr-crs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LTf-ZM-glY" userLabel="FiveBt">
                                                         <rect key="frame" x="92" y="0.0" width="92" height="82"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="5"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUx-Y2-6wY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1E1-Pj-WMA" userLabel="SixBt">
                                                         <rect key="frame" x="184" y="0.0" width="92" height="82"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="6"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Fd-jN-qkc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
@@ -92,7 +103,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="yJt-20-0AU" userLabel="Row2">
+                                    <view contentMode="scaleToFill" id="yJt-20-0AU" userLabel="Row3">
                                         <rect key="frame" x="4" y="200" width="292" height="98"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -105,18 +116,27 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="7"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7O-5g-5Qf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JSV-E0-Ig1" userLabel="EightBt">
                                                         <rect key="frame" x="97.5" y="0.0" width="97" height="98"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="8"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ln9-33-yNq"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WyE-CK-4ku" userLabel="NineBt">
                                                         <rect key="frame" x="194.5" y="0.0" width="97.5" height="98"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="9"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bw8-ep-pKz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
@@ -137,12 +157,18 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="0"/>
+                                                        <connections>
+                                                            <action selector="typeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0M-pa-j9Y"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UMD-fR-HEC" userLabel="EnterBt">
                                                         <rect key="frame" x="92" y="0.0" width="200" height="98"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="41"/>
                                                         <state key="normal" title="Enter"/>
+                                                        <connections>
+                                                            <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ht-mc-Uls"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
@@ -153,27 +179,48 @@
                                 </subviews>
                                 <edgeInsets key="layoutMargins" top="4" left="4" bottom="4" right="4"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PoK-Jf-YL8" userLabel="Player2ScoreLabel">
-                                <rect key="frame" x="163" y="79" width="172" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 - score: 200  - Lifes: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nxs-2r-bLg" userLabel="Player1ScoreLabel">
+                                <rect key="frame" x="95" y="41" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nxs-2r-bLg" userLabel="Player1ScoreLabel">
-                                <rect key="frame" x="163" y="41" width="172" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 - score: 200  - Lifes: 3" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PoK-Jf-YL8" userLabel="Player2ScoreLabel">
+                                <rect key="frame" x="95" y="70" width="240" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Player1: 20 + 20 ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8kr-38-ml9" userLabel="Screen">
+                                <rect key="frame" x="16" y="134" width="350" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6ms-51-wpa" userLabel="AnswerLabel">
+                                <rect key="frame" x="37" y="127" width="300" height="456"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="6ms-51-wpa" id="ZhU-Oz-xjY"/>
+                        <outlet property="enterButton" destination="UMD-fR-HEC" id="yaA-eY-Ria"/>
+                        <outlet property="player1ScreenLabel" destination="Nxs-2r-bLg" id="TD0-o5-pet"/>
+                        <outlet property="player2ScreenLabel" destination="PoK-Jf-YL8" id="fYZ-GT-qUC"/>
+                        <outlet property="resultScreenLabel" destination="8kr-38-ml9" id="S0e-b8-MO7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="125.4872563718141"/>
+            <point key="canvasLocation" x="-436" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

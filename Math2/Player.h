@@ -13,7 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Player : NSObject
 @property (nonatomic) int score;
 @property (nonatomic) int lives;
+@property (nonatomic, strong) NSString * name;
 @property (nonatomic, getter=isAlive) BOOL alive;
+
+//Methods
+-(void) loseLife;
+-(void) hitAnAnswer;
+
 @end
 
 NS_ASSUME_NONNULL_END
