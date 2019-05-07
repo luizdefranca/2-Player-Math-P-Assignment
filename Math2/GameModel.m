@@ -63,13 +63,13 @@
 }
 
 -(void) loseLife{
-    [_currentPlayer hitAnAnswer];
+    [_currentPlayer loseLife];
     if(_currentPlayer.lives <= 0){
         _gameOn = NO;
     }
 }
 -(void) hitAnAnswer{
-     [_currentPlayer loseLife];
+     [_currentPlayer hitAnAnswer];
 }
 
 

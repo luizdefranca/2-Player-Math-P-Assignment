@@ -61,6 +61,15 @@
     //check the answer
     if ([_gameModel checkAnswer:  _answer.integerValue]){
         
+        [UIView animateWithDuration:1
+                         animations:^{
+                             [self.answerLabel setHidden: NO];
+                             self.answerLabel.textColor = [UIColor greenColor];
+                             self.answerLabel.text = @"Correct";
+                             
+                         } completion:^(BOOL finished) {
+                             [self.answerLabel setHidden: YES];
+                         }];
         
 //        [UIView animateWithDuration: 2 animations:^{
 //           self.answerLabel.text = @"Correct";
@@ -71,8 +80,9 @@
         
       //  [_answerLabel setHidden: YES];
         
-        NSString * screenPlayer = [NSString stringWithFormat: @"%@ : Score: %d Lifes: %d",
+    NSString * screenPlayer = [NSString stringWithFormat: @"%@ : Score: %d Lifes: %d",
                                    _currentPlayer.name, _currentPlayer.score, _currentPlayer.lives];
+        
         if([_currentPlayer.name isEqualToString: @"Player1"]){
             _player1ScreenLabel.text = screenPlayer;
         } else {
@@ -81,12 +91,15 @@
     } else {
         
         
-//        [UIView animateWithDuration: 2 animations:^{
-//            self.answerLabel.text = @"Incorrect";
-//            [self.answerLabel setHidden: NO];
-//            
-//        }];
-//        [self.answerLabel setHidden: YES];
+        [UIView animateWithDuration:1
+                         animations:^{
+                             [self.answerLabel setHidden: NO];
+                             self.answerLabel.textColor = [UIColor redColor];
+                             self.answerLabel.text = @"Incorrect";
+                             
+                         } completion:^(BOOL finished) {
+                             [self.answerLabel setHidden: YES];
+                         }];
         
         [_answerLabel setHidden: YES];
         NSString * screenPlayer = [NSString stringWithFormat: @"%@ - Score: %d Lifes: %d",
